@@ -7,10 +7,18 @@ import Card from './components/card'
 function App() {
   const [count, setCount] = useState(0)
 
+  let myobj = {
+    userName: "Vishal",
+    age:18
+  }
+
+  let newArr = [1, 2, 3]
+
   return (
     <>
       <h1 className="bg-green-400 text-white p-5 rounded-xl mb-4">Tailwind Test</h1>
-     <Card/>
+     <Card username = "chai aur code" btnText = "click me"/>
+     <Card username = "Vishal Kumar shah" />
     </>
   ) 
 }
